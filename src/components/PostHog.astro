@@ -1,0 +1,14 @@
+---
+// Public ingestion credentials only. Never use a personal API key here.
+// Pentridge / Default project (642504). Project ingestion tokens are public.
+const token = import.meta.env.PUBLIC_POSTHOG_KEY || 'phc_mCS9DxEKCUNey99iiD6kd7S3j6WFzwiUmBfKFtZetjEU';
+const host = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
+const enabled = import.meta.env.PROD && token && host;
+---
+
+{enabled && <meta name="posthog-config" content={token} data-api-host={host} />}
+<script>
+  import { initAnalytics } from '../scripts/analytics.js';
+  const config = document.querySelector<HTMLMetaElement>('meta[name="posthog-config"]');
+  if (config) initAnalytics(config.content, config.dataset.apiHost);
+</script>

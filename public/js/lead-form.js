@@ -107,6 +107,12 @@ function initLeadForms() {
 					return;
 				}
 
+				try {
+					window.rayAnalytics?.capture('lead_form_submitted', {
+						form_location: form.dataset.leadFormTheme === 'dark' ? 'hero' : 'contact',
+					});
+				} catch { /* Analytics must not affect the form. */ }
+
 				form.reset();
 				showStatus(
 					status,
