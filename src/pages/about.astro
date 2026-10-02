@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Ray L. Pearson | Law Office of Ray L. Pearson, LLC">
+    
+    <!-- Parallax Hero -->
+    <section class="relative min-h-[55vh] md:min-h-[75vh] flex items-center justify-center pt-32 pb-16 md:pb-24 overflow-hidden">
+        <div class="parallax-bg absolute inset-0" style="background-image: url('/images/about-parallax-hero.png');"></div>
+        <div class="absolute inset-0 bg-slate-900/65 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/85 via-slate-900/45 to-slate-900/80"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center reveal-up">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold mb-4 text-white drop-shadow-lg">The Firm</h1>
+            <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+            <p class="text-xl text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md">Trusted legal representation backed by experience and compassion.</p>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div class="w-full md:w-5/12 reveal-left">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gold translate-x-4 translate-y-4 rounded-sm transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
+                        <img src="/images/ray-pearson-about.png" alt="Ray L. Pearson, Atlanta injury and criminal defense attorney" class="relative rounded-sm shadow-2xl w-full object-cover object-center z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 aspect-[4/5]" />
+                    </div>
+                </div>
+                <div class="w-full md:w-7/12 reveal-right delay-200">
+                    <h2 class="text-sm font-bold text-gold uppercase tracking-[0.2em] mb-4 flex items-center">
+                        <span class="w-12 h-px bg-gold mr-4"></span> Lead Counsel
+                    </h2>
+                    <h3 class="text-5xl md:text-6xl font-serif text-slate-900 mb-8 leading-tight">Ray L. Pearson, Esq.</h3>
+                    <div class="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+                        <p class="first-letter:text-7xl first-letter:font-serif first-letter:text-slate-900 first-letter:float-left first-letter:pr-4 first-letter:pt-2">
+                            With a profound commitment to justice, the Law Office of Ray L. Pearson, LLC operates on the belief that every client deserves to be heard, respected, and fiercely protected when facing challenging legal circumstances.
+                        </p>
+                        <p>
+                            Focusing on motor vehicle collisions and criminal defense, Mr. Pearson brings a steadfast and commanding presence to the courtroom. We carefully analyze evidence, protect your rights, and build strong strategies to safeguard your freedom and financial future.
+                        </p>
+                        <blockquote class="border-l-4 border-gold pl-6 italic text-xl text-slate-800 my-8 py-4 bg-gray-50 border-y border-r border-gray-100 rounded-r-md">
+                            Success in the legal field requires more than just knowing the law. It requires the ability to truly listen to clients, understand their needs, and strategically advocate for their best outcome.
+                        </blockquote>
+                    </div>
+                    
+                    <div class="mt-12 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden sm:block w-12 h-12 text-gold opacity-50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                        </svg>
+                        <a href="/contact" class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm tracking-wider uppercase px-6 sm:px-8 py-4 rounded-sm transition-all shadow-lg hover:-translate-y-1 inline-block text-center w-full sm:w-auto">
+                            Schedule a Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Break -->
+    <section class="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center overflow-hidden px-4">
+        <div class="parallax-bg absolute inset-0" style="background-image: url('/images/about-parallax-break.png'); background-position: center 40%;"></div>
+        <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        
+        <div class="relative z-10 text-center px-2 reveal-up">
+            <h3 class="text-2xl sm:text-4xl md:text-6xl font-serif text-white mb-6 drop-shadow-lg leading-tight">Strategic Defense. <br/><span class="italic text-gold">Unwavering Advocacy.</span></h3>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-24 bg-slate-50 border-t border-gray-200 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal-up">
+                <h2 class="text-sm font-bold text-gold uppercase tracking-[0.2em] mb-4">Our Foundation</h2>
+                <h3 class="text-4xl md:text-5xl font-serif text-slate-900">Why Clients Choose Us</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Value 1 -->
+                <div class="bg-white p-10 rounded-sm shadow-xl border-t-4 border-gold reveal-up delay-100 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-serif text-slate-900 mb-4">Aggressive Negotiation</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Insurance companies use sophisticated tactics to minimize payouts. We deploy counter-strategies that aggressively dismantle their defenses, ensuring you receive maximum compensation.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-10 rounded-sm shadow-xl border-t-4 border-slate-900 reveal-up delay-200 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-14 h-14 bg-gold rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-serif text-slate-900 mb-4">Trial-Tested Experience</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">We prepare every single case thoroughly from day one. This level of preparation ensures that whether we settle or go to trial, your case is positioned for the best possible outcome.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-10 rounded-sm shadow-xl border-t-4 border-gold reveal-up delay-300 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-serif text-slate-900 mb-4">Direct Communication</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">You will never be left in the dark. We maintain open, honest, and frequent communication lines so you always understand the exact status and trajectory of your legal matter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>

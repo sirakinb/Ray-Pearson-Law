@@ -1,0 +1,2 @@
+# Prefer the Astro static site over the legacy WordPress index.php.
+DirectoryIndex index.html index.php

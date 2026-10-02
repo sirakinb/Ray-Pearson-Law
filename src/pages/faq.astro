@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FAQ | Law Office of Ray L. Pearson, LLC">
+    
+    <!-- Parallax Hero -->
+    <section class="relative min-h-[55vh] md:min-h-[75vh] flex items-center justify-center pt-32 pb-16 md:pb-24 overflow-hidden">
+        <div class="parallax-bg absolute inset-0" style="background-image: url('/images/faq-courthouse-parallax.png');"></div>
+        <div class="absolute inset-0 bg-slate-900/65 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/85 via-slate-900/45 to-slate-900/80"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center reveal-up">
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-serif font-bold mb-4 text-white drop-shadow-lg">Frequently Asked Questions</h1>
+            <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+            <p class="text-xl text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md">Get answers to the most common questions regarding personal injury and criminal defense.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="space-y-4 reveal-up delay-100" id="faq-accordion">
+                
+                <div class="faq-item border border-gray-200 rounded-sm shadow-sm overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl md:text-2xl font-serif text-slate-900 font-medium">What should I do immediately after a car accident?</h3>
+                        <svg class="faq-icon w-6 h-6 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-8 pb-8 text-gray-600 font-light leading-relaxed">
+                        First, ensure everyone's safety and call 911 to get police and medical assistance on the scene. Seek medical attention immediately, even if you feel fine. Document the scene by taking photos and gathering witness info, but do not admit fault to anyone. Finally, contact a personal injury attorney as soon as possible before speaking with the insurance companies.
+                    </div>
+                </div>
+
+                <div class="faq-item border border-gray-200 rounded-sm shadow-sm overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl md:text-2xl font-serif text-slate-900 font-medium">How much does it cost to hire a personal injury lawyer?</h3>
+                        <svg class="faq-icon w-6 h-6 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-8 pb-8 text-gray-600 font-light leading-relaxed">
+                        We operate on a contingency fee basis for personal injury cases. This means you pay zero upfront costs and no out-of-pocket fees. We only get paid if we successfully recover a settlement or verdict for you.
+                    </div>
+                </div>
+
+                <div class="faq-item border border-gray-200 rounded-sm shadow-sm overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl md:text-2xl font-serif text-slate-900 font-medium">Do I really need a lawyer for a misdemeanor charge?</h3>
+                        <svg class="faq-icon w-6 h-6 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-8 pb-8 text-gray-600 font-light leading-relaxed">
+                        Absolutely. Misdemeanors can still result in jail time, steep fines, and a permanent criminal record which can affect your employment and housing opportunities. An experienced attorney can often negotiate reduced charges or even get the case dismissed.
+                    </div>
+                </div>
+
+                <div class="faq-item border border-gray-200 rounded-sm shadow-sm overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl md:text-2xl font-serif text-slate-900 font-medium">How long will my case take to resolve?</h3>
+                        <svg class="faq-icon w-6 h-6 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-8 pb-8 text-gray-600 font-light leading-relaxed">
+                        Every case is unique. Some clear-cut personal injury claims settle in a matter of months, while complex commercial trucking accidents or criminal defense trials can take over a year. We prioritize getting you the *best* result, not just the fastest, but we will always keep you informed every step of the way.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Break -->
+    <section class="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center overflow-hidden px-4">
+        <div class="parallax-bg absolute inset-0" style="background-image: url('/images/ray-legal-parallax.png'); background-position: center 25%;"></div>
+        <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        
+        <div class="relative z-10 text-center px-2 reveal-up">
+            <h3 class="text-2xl sm:text-3xl md:text-5xl font-serif text-white mb-6 drop-shadow-lg leading-tight">No Two Cases Are Alike. <br/>Your Strategy Shouldn't Be Either.</h3>
+            <p class="text-gold font-light max-w-2xl mx-auto drop-shadow-md uppercase tracking-[0.2em] text-sm">Let us fight for the outcome you deserve</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl text-center reveal-up">
+            <p class="text-xl text-slate-800 mb-6 font-serif">Still have questions?</p>
+            <a href="/contact" class="bg-gold hover:bg-gold-light text-slate-900 font-bold text-sm tracking-wider uppercase px-10 py-4 rounded-sm transition-all shadow-lg hover:-translate-y-1 inline-block">
+                Contact Us Today
+            </a>
+        </div>
+    </section>
+
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqBtns = document.querySelectorAll('.faq-btn');
+            
+            faqBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('.faq-icon');
+                    
+                    // Close all other accordions
+                    document.querySelectorAll('.faq-content').forEach(otherContent => {
+                        if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                            otherContent.classList.add('hidden');
+                            otherContent.previousElementSibling.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle current
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</Layout>

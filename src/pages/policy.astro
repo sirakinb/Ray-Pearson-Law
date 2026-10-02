@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { officeAddressFull } from '../data/contact';
+---
+
+<Layout title="Privacy Policy | Law Office of Ray L. Pearson, LLC">
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSI+PC9yZWN0Pgo8cGF0aCBkPSJNMCAwTDggOFpNOCAwTDAgOFoiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMSI+PC9wYXRoPgo8L3N2Zz4=')]"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center reveal-up">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4">Privacy Policy</h1>
+            <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-24 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-white p-12 md:p-16 rounded-sm shadow-xl space-y-8 text-gray-600 font-light leading-relaxed reveal-up delay-100 border-t-4 border-gold">
+                <p class="text-lg">
+                    Law Office of Ray L. Pearson, LLC ("we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website or communicate with us.
+                </p>
+
+                <div class="border-l-2 border-slate-200 pl-6 space-y-3">
+                    <h3 class="text-2xl font-serif text-slate-900 pt-4">1. Information We Collect</h3>
+                    <p>
+                        When you use our website, we may collect personal information that you voluntarily provide to us via contact forms, consultation requests, or direct email communication. This includes your name, phone number, email address, and any case-specific details you share. 
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-slate-200 pl-6 space-y-3">
+                    <h3 class="text-2xl font-serif text-slate-900 pt-4">2. How We Use Your Information</h3>
+                    <p>
+                        The information collected is used solely to evaluate your potential legal matter, respond to your inquiries, and provide you with legal services. We do not sell, trade, or rent your personal information to third parties. We may enter your contact information into our Customer Relationship Management (CRM) system for communication purposes and to manage your case file securely.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-slate-200 pl-6 space-y-3">
+                    <h3 class="text-2xl font-serif text-slate-900 pt-4">3. Data Security</h3>
+                    <p>
+                        We implement appropriate security measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction. However, please be aware that no transmission of data over the internet or any wireless network can be guaranteed to be 100% secure.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-slate-200 pl-6 space-y-3">
+                    <h3 class="text-2xl font-serif text-slate-900 pt-4">4. Attorney-Client Privilege</h3>
+                    <p>
+                        Please note that submitting information through our website does not immediately create an attorney-client relationship. An attorney-client relationship is only formed once a formal representation agreement is signed. However, all information submitted for the purpose of a consultation will be kept strictly confidential.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-slate-200 pl-6 space-y-3">
+                    <h3 class="text-2xl font-serif text-slate-900 pt-4">5. Contact Us</h3>
+                    <p>
+                        If you have any questions regarding this Privacy Policy or how we handle your personal data, please contact us at <strong class="text-slate-900">rpearson@raypearsonlawgroup.com</strong>, call us at <strong class="text-slate-900">(404) 719-9561</strong>, or visit us at <strong class="text-slate-900">{officeAddressFull}</strong>.
+                    </p>
+                </div>
+                
+                <div class="pt-8 border-t border-gray-100 mt-12">
+                    <p class="text-sm italic text-gray-400">Last updated: {new Date().getFullYear()}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>

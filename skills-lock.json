@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "gemini-omni-flash-api": {
+      "source": "google-gemini/gemini-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gemini-omni-flash-api/SKILL.md",
+      "computedHash": "765da8e118722c2278635b98aa2ac9319361b431dc2cfe4704b72624e4899c8a"
+    }
+  }
+}

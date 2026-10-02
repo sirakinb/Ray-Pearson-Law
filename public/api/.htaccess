@@ -1,0 +1,6 @@
+<Files "config.php">
+	Require all denied
+</Files>
+
+RewriteEngine On
+RewriteRule ^lead$ lead.php [L,QSA]
