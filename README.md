@@ -44,8 +44,8 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Ray Pearson Law analytics
 
-PostHog loads on production builds only when both `PUBLIC_POSTHOG_KEY` and `PUBLIC_POSTHOG_HOST` are set. Create/select the dedicated Ray Pearson Law project in PostHog and use its public project token, not a personal API key. Set these variables in `.env` or the build environment before running `npm run build:hostinger`, then deploy with the existing Hostinger workflow. Static sites must be rebuilt when these values change.
+Production builds send analytics to Pentridge's Default project (642504), using its public ingestion token and US Cloud endpoint. No additional PostHog environment configuration is required. Optional `PUBLIC_POSTHOG_KEY` and `PUBLIC_POSTHOG_HOST` overrides can route a future build to another project; use a public project token, never a personal API key. Run `npm run build:hostinger` and deploy with the existing Hostinger workflow. Static sites must be rebuilt when configuration changes.
 
 Tracked events: `$pageview`, `phone_link_clicked` (a call-link click, not a completed call), and `lead_form_submitted` (only after a successful response from the lead endpoint). Event properties exclude form values and query strings. Autocapture and session replay are disabled. No visitor identification is performed. Local development does not send events.
 
-After deployment, open the site, visit another page, and click a phone link. Confirm those events in the Ray Pearson Law project's live events. Verify submission tracking using an approved test lead; submitting the form also invokes the existing CRM and email workflow.
+After deployment, open the site, visit another page, and click a phone link. Confirm those events in the Default project's live events at https://us.posthog.com/project/642504/web/live. Verify submission tracking using an approved test lead; submitting the form also invokes the existing CRM and email workflow.
