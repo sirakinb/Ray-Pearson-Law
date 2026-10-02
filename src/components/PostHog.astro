@@ -1,0 +1,13 @@
+---
+// Public ingestion credentials only. Never use a personal API key here.
+const token = import.meta.env.PUBLIC_POSTHOG_KEY;
+const host = import.meta.env.PUBLIC_POSTHOG_HOST;
+const enabled = import.meta.env.PROD && token && host;
+---
+
+{enabled && <meta name="posthog-config" content={token} data-api-host={host} />}
+<script>
+  import { initAnalytics } from '../scripts/analytics.js';
+  const config = document.querySelector<HTMLMetaElement>('meta[name="posthog-config"]');
+  if (config) initAnalytics(config.content, config.dataset.apiHost);
+</script>
